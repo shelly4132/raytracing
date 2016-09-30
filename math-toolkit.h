@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <assert.h>
 
-static inline
+static inline __attribute__((always_inline))
 void normalize(double *v)
 {
     double d = sqrt(v[0] * v[0] + v[1] * v[1] + v[2] * v[2]);
